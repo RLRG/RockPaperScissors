@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		37DEFF2E1F7D086C009CCBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DEFF2D1F7D086C009CCBE1 /* main.m */; };
+		37DEFF361F7D0890009CCBE1 /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DEFF351F7D0890009CCBE1 /* RPSTurn.m */; };
+		37DEFF3B1F7D08B8009CCBE1 /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DEFF3A1F7D08B8009CCBE1 /* RPSGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		37DEFF2A1F7D086C009CCBE1 /* RockPaperScissors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RockPaperScissors; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DEFF2D1F7D086C009CCBE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37DEFF341F7D0890009CCBE1 /* RPSTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSTurn.h; sourceTree = "<group>"; };
+		37DEFF351F7D0890009CCBE1 /* RPSTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSTurn.m; sourceTree = "<group>"; };
+		37DEFF391F7D08B8009CCBE1 /* RPSGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSGame.h; sourceTree = "<group>"; };
+		37DEFF3A1F7D08B8009CCBE1 /* RPSGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,37 @@
 		37DEFF2C1F7D086C009CCBE1 /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				37DEFF2D1F7D086C009CCBE1 /* main.m */,
+				37DEFF381F7D089E009CCBE1 /* App */,
+				37DEFF3C1F7D08BC009CCBE1 /* Controller */,
+				37DEFF371F7D0895009CCBE1 /* Model */,
 			);
 			path = RockPaperScissors;
+			sourceTree = "<group>";
+		};
+		37DEFF371F7D0895009CCBE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37DEFF341F7D0890009CCBE1 /* RPSTurn.h */,
+				37DEFF351F7D0890009CCBE1 /* RPSTurn.m */,
+				37DEFF391F7D08B8009CCBE1 /* RPSGame.h */,
+				37DEFF3A1F7D08B8009CCBE1 /* RPSGame.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37DEFF381F7D089E009CCBE1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				37DEFF2D1F7D086C009CCBE1 /* main.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		37DEFF3C1F7D08BC009CCBE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DEFF361F7D0890009CCBE1 /* RPSTurn.m in Sources */,
 				37DEFF2E1F7D086C009CCBE1 /* main.m in Sources */,
+				37DEFF3B1F7D08B8009CCBE1 /* RPSGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
