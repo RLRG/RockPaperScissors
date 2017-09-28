@@ -53,9 +53,14 @@
     }
 }
 
--(BOOL)defeats:(RPSTurn*) turn {
-    // TODO: Change the following placeholder:
-    return false;
+-(BOOL)defeats:(RPSTurn*) opponent {
+    if ( (self.move == Paper && opponent.move == Rock) ||
+         (self.move == Rock && opponent.move == Scissors) ||
+         (self.move == Scissors && opponent.move == Paper)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 @end
