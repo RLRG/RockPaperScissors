@@ -12,4 +12,6 @@
 
 @property (nonatomic) RPSGame *game;
 
+-(NSString*)messageForGame:(RPSGame*)game;
+
 @end
