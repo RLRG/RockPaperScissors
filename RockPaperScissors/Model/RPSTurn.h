@@ -21,5 +21,6 @@ typedef NS_ENUM(NSInteger, Move) {
 
 -(instancetype)initWithMove:(Move) move;
 -(BOOL)defeats:(RPSTurn*) opponent;
+-(NSString*)description;
 @end
 
