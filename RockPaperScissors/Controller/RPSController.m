@@ -12,7 +12,13 @@
 @implementation RPSController
 
 -(void)throwDown:(Move) move {
-    // TODO: Body of the function.
+    // Here the RPSTurn class generates the opponent's move
+    RPSTurn *playersTurn = [[RPSTurn alloc]initWithMove:move];
+    RPSTurn *computersTurn = [[RPSTurn alloc] init];
+    
+    // The RPSGame class stores the results of a game
+    self.game = [[RPSGame alloc] initWithFirstTurn:playersTurn
+                                        secondTurn:computersTurn];
 }
 
 @end
