@@ -12,6 +12,7 @@
 
 @property (nonatomic) RPSGame *game;
 
+-(void)throwDown:(Move) move;
 -(NSString*)messageForGame:(RPSGame*)game;
 
 @end
