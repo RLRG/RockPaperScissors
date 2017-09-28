@@ -23,5 +23,15 @@
     return self;
 }
 
+-(Move)generateMove {
+    // TODO: Change the following placeholder:
+    return Rock;
+}
+
+-(BOOL)defeats:(RPSTurn*) turn {
+    // TODO: Change the following placeholder:
+    return false;
+}
+
 @end
 
